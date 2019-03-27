@@ -1,0 +1,57 @@
+#include <iostream>
+
+
+using namespace std;
+
+char readcount(char c, int &soma);
+void winner(int &soma, int &soma2);
+int main()
+{
+    int cont=1, s1=0, s2=0;
+    char c;
+
+    while(cont<=3)
+    {
+
+        cout<<" Primeiro jogador Escolha a carta: " << cont << endl;
+        cin>>c;
+        readcount(c,s1);
+
+        cout<<" segundo jogador Escolha a carta: " << cont << endl;
+        cin>>c;
+        readcount(c,s2);
+
+        cont++;
+
+
+    }
+
+    winner(s1,s2);
+
+    return 0;
+}
+
+
+char readcount(char c, int &soma)
+{
+
+    soma += int(c);
+
+}
+
+void winner(int &soma, int &soma2){
+
+    if(soma==soma2){
+
+        cout<<"jogo empatado! "<<endl;
+    }
+
+     if(soma>soma2){
+
+        cout<<"jogador 1 ganhou! "<<endl;
+    }else{
+
+        cout<<"Jogador 2 ganhou! "<<endl;
+    }
+
+}
