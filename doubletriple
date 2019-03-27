@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+void multe(int num, int &duble, int &triple);
+
+int main()
+{
+    int A, b, c;
+    cout<<"informe A"<<endl;
+    cin >> A;
+    cout<< A << endl;
+
+    multe(A, b, c);
+
+    return 0;
+
+}
+
+void multe (int num, int &duble, int &triple)
+{
+    duble = 2*num;
+    triple = 3*num;
+
+    cout<< duble << endl;
+    cout<< triple << endl;
+}
+
+
