@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+void div (int num, int num2, int &q, int &r);
+int main(){
+
+    int x, y, resto, quociente;
+    cout << "Informe X e Y" << endl;
+    cin >> x >> y;
+    div(x, y, quociente, resto);
+
+
+}
+
+void div (int num, int num2, int &q, int &r){
+
+    q=num/num2;
+    r=num%num2;
+
+    cout << q << endl;
+    cout << r << endl;
+}
